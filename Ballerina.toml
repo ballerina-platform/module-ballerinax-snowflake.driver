@@ -1,0 +1,14 @@
+[package]
+org = "ballerinax"
+name = "snowflake.driver"
+version = "0.1.0"
+license= ["Apache-2.0"]
+authors = ["Ballerina"]
+keywords = ["snowflake","cloud","data warehouse"]
+repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.driver"
+
+[build-options]
+observabilityIncluded = true
+
+[[platform.java11.dependency]]
+path = "./snowflakeDriver/snowflake-jdbc-3.13.6.jar"
