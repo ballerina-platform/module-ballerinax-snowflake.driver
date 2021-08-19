@@ -24,7 +24,7 @@ jobs:
             
             # Build the ballerina project
             - name: Ballerina Build
-              uses: ballerina-platform/ballerina-action@slbeta2
+              uses: ballerina-platform/ballerina-action@nightly
               with:
                   args:
                       build -c

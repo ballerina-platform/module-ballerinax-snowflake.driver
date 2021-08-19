@@ -7,7 +7,7 @@ This package bundles the latest Snowflake JDBC Driver.
 ### Compatibility
 |                                   | Version                         |
 |-----------------------------------|---------------------------------|
-| Ballerina Language                | Ballerina Swan Lake Beta2       | 
+| Ballerina Language                | Ballerina Swan Lake Beta3       | 
 | Snowflake JDBC Driver             | 3.13.6                          |
 
 ## Report issues
