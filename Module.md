@@ -3,6 +3,13 @@ This is a Ballerina library for [Snowflake JDBC Driver v3.13.6](https://docs.sno
 The Snowflake JDBC driver is a JDBC type 4 driver that supports the core JDBC functionality in version 1.0 of the JDBC API.
 You can create and manage all Snowflake objects, including virtual warehouses, databases, and all database objects. 
 It also provides the capability to query Snowflake data. You can find reference information for all the Snowflake SQL commands (DDL, DML, and query syntax) [here](https://docs.snowflake.com/en/sql-reference-commands.html). You can find reference information for the system-defined SQL functions [here](https://docs.snowflake.com/en/sql-reference-functions.html).
+
+## Prerequisites
+
+Before using this connector in your Ballerina application, complete the following:
+
+* Create a [Snowflake](https://www.snowflake.com) account
+* Obtain the JDBC driver connection string, username and password by following [this guide](https://docs.snowflake.com/en/user-guide/jdbc-configure.html)
  
 ## Quickstart
 

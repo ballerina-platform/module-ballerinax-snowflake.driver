@@ -11,4 +11,6 @@ repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.
 observabilityIncluded = true
 
 [[platform.java11.dependency]]
-path = "./snowflakeDriver/snowflake-jdbc-3.13.6.jar"
+groupId = "net.snowflake"
+artifactId = "snowflake-jdbc"
+version = "3.13.6"

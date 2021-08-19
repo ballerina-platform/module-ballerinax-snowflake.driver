@@ -13,3 +13,6 @@
 // KIND, either express or implied.  See the License for the
 // specific language governing permissions and limitations
 // under the License.
+
+// This file is here for the purpose of building the connector driver module. 
+// We need add at least one .bal file to build the module.
