@@ -11,7 +11,7 @@ This package bundles the latest Snowflake JDBC Driver.
 | Snowflake JDBC Driver             | 3.13.6                          |
 
 ## Report issues
-To report bugs, request new features, start new discussions, view project boards, etc., go to the [Ballerina connector repository](https://github.com/ballerina-platform/module-ballerinax-snowflake.driver)
+To report bugs, request new features, start new discussions, view project boards, etc., go to the [Ballerina Extended Library repository](https://github.com/ballerina-platform/ballerina-extended-library)
 
 ## Useful links
 - Discuss code changes of the Ballerina project in [ballerina-dev@googlegroups.com](mailto:ballerina-dev@googlegroups.com).
