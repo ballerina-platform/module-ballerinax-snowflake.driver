@@ -31,3 +31,17 @@ jobs:
                       build -c
               env:
                 JAVA_HOME: /usr/lib/jvm/default-jvm
+
+            # Send notification when build fails
+            - name: Notify failure
+              if: ${{ failure() }}
+              run: |
+                curl \
+                -X POST 'https://chat.googleapis.com/v1/spaces/${{secrets.BALLERINA_CHAT_ID}}/messages?key=${{secrets.BALLERINA_CHAT_KEY}}&token=${{secrets.BALLERINA_CHAT_TOKEN}}' \
+                --header 'Content-Type: application/json' \
+                -d '{"text": "*module-ballerinax-snowflake.driver* daily build failure \nPlease visit <https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/actions?query=workflow%3A%22Daily+build%22|the daily build page> for more information"}'
+
+                curl \
+                -X POST 'https://chat.googleapis.com/v1/spaces/${{secrets.CONNECTOR_CHAT_ID}}/messages?key=${{secrets.CONNECTOR_CHAT_KEY}}&token=${{secrets.CONNECTOR_CHAT_TOKEN}}' \
+                --header 'Content-Type: application/json' \
+                -d '{"text": "*module-ballerinax-snowflake.driver* daily build failure \nPlease visit <https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/actions?query=workflow%3A%22Daily+build%22|the daily build page> for more information"}'
