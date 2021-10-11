@@ -1,10 +1,10 @@
 [package]
 org = "ballerinax"
 name = "snowflake.driver"
-version = "1.0.1-SNAPSHOT"
+version = "2.0.0"
 license= ["Apache-2.0"]
 authors = ["Ballerina"]
-keywords = ["business intelligence/data wareshouse", "cost/paid"]
+keywords = ["Business Intelligence/Data Wareshouse", "Cost/Paid"]
 repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.driver"
 
 [build-options]
