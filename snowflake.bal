@@ -17,6 +17,8 @@
 // This file is here for the purpose of building the connector driver module. 
 // We need add at least one .bal file to build the module.
 
+import ballerina/jballerina.java as _;
+
 @display {label: "Snowflake", iconPath: "resources/snowflake.driver.svg"}
 public isolated client class Client {
 
