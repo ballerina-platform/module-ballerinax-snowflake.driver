@@ -4,7 +4,7 @@ name = "snowflake.driver"
 version = "2.0.0"
 license= ["Apache-2.0"]
 authors = ["Ballerina"]
-keywords = ["Business Intelligence/Data Wareshouse", "Cost/Paid"]
+keywords = ["Business Intelligence/Data Warehouse", "Cost/Paid"]
 repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.driver"
 
 [build-options]
