@@ -19,7 +19,7 @@
 
 import ballerina/jballerina.java as _;
 
-@display {label: "Snowflake", iconPath: "resources/snowflake.driver.svg"}
+@display {label: "Snowflake", iconPath: "icon.png"}
 public isolated client class Client {
 
 }
