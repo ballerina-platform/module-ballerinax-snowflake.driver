@@ -24,7 +24,7 @@ jobs:
             
             # Build the ballerina project
             - name: Ballerina Build
-              uses: ballerina-platform/ballerina-action@nightly
+              uses: ballerina-platform/ballerina-action@slbeta6
               with:
                   args:
                       pack
@@ -33,7 +33,7 @@ jobs:
 
             # Test the ballerina project
             - name: Ballerina Test
-              uses: ballerina-platform/ballerina-action@nightly
+              uses: ballerina-platform/ballerina-action@slbeta6
               with:
                   args:
                       test
