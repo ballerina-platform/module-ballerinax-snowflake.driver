@@ -1,7 +1,8 @@
 [package]
+distribution = "slbeta6"
 org = "ballerinax"
 name = "snowflake.driver"
-version = "2.0.0"
+version = "2.1.0"
 license= ["Apache-2.0"]
 authors = ["Ballerina"]
 keywords = ["Business Intelligence/Data Warehouse", "Cost/Paid"]
@@ -14,4 +15,4 @@ observabilityIncluded = true
 [[platform.java11.dependency]]
 groupId = "net.snowflake"
 artifactId = "snowflake-jdbc"
-version = "3.13.6"
+version = "3.13.11"
