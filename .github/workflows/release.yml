@@ -26,7 +26,7 @@ jobs:
 
             # Build the ballerina project
             - name: Ballerina Build
-              uses: ballerina-platform/ballerina-action@nightly
+              uses: ballerina-platform/ballerina-action@slbeta6
               with:
                   args:
                       pack
@@ -35,7 +35,7 @@ jobs:
 
             # Push the module to the Ballerina central
             - name: Ballerina Push
-              uses: ballerina-platform/ballerina-action@nightly
+              uses: ballerina-platform/ballerina-action@slbeta6
               with:
                   args:
                       push
