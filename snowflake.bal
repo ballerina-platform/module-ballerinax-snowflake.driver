@@ -18,8 +18,3 @@
 // We need add at least one .bal file to build the module.
 
 import ballerina/jballerina.java as _;
-
-@display {label: "Snowflake", iconPath: "icon.png"}
-public isolated client class Client {
-
-}
