@@ -37,7 +37,7 @@ modules = [
 [[package]]
 org = "ballerinax"
 name = "snowflake.driver"
-version = "2.2.0"
+version = "2.3.0"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerinai", name = "observe"}
