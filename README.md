@@ -3,6 +3,7 @@ Ballerina Snowflake Driver Library
 
 [![Build](https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/workflows/CI/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/actions?query=workflow%3ACI)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinax-snowflake.driver.svg)](https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/commits/master)
+[![GraalVM Check](https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/actions/workflows/build-with-bal-test-native.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-snowflake.driver/actions/workflows/build-with-bal-test-native.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [Snowflake](https://docs.snowflake.com/en/index.html) is one of the few enterprise-ready cloud data warehouses that brings simplicity without sacrificing features. It automatically scales, both up and down, to get the right balance of performance vs. cost. Snowflake’s claim to fame is that it separates compute from storage. Snowflake enables data storage, processing, and analytic solutions that are faster, easier to use, and far more flexible than traditional offerings. Snowflake provides all of the functionality of an enterprise analytic database, along with many additional special features and unique capabilities.
