@@ -31,11 +31,15 @@ jobs:
               env:
                 JAVA_HOME: /usr/lib/jvm/default-jvm
 
-            # Test the ballerina project
-            - name: Ballerina Test
+            - name: Ballerina Tests
+              # tests will be skipped if the PR is from a forked repository (as the secrets are not available)
+              if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
               uses: ballerina-platform/ballerina-action@nightly
               with:
                   args:
-                      test
+                      test --test-report --code-coverage --coverage-format=xml
               env:
                 JAVA_HOME: /usr/lib/jvm/default-jvm
+
+            - name: Upload coverage reports to Codecov
+              uses: codecov/codecov-action@v3
