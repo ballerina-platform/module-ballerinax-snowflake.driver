@@ -18,4 +18,4 @@ graalvmCompatible = true
 [[platform.java11.dependency]]
 groupId = "net.snowflake"
 artifactId = "snowflake-jdbc"
-version = "3.13.11"
+version = "3.13.15"
