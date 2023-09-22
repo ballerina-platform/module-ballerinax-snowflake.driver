@@ -4,9 +4,9 @@ name: CI
 # Triggers the workflow on push.
 on:
   push:
-    branches-ignore:
-      - "automated/dependency_version_update"
-      - "automated/dependency_version_update_tmp"
+    branches:
+      - main
+      - 2201.[0-9]+.x
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
