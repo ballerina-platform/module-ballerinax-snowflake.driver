@@ -9,46 +9,56 @@ Ballerina Snowflake Driver Library
 
 [Snowflake](https://docs.snowflake.com/en/index.html) is one of the few enterprise-ready cloud data warehouses that brings simplicity without sacrificing features. It automatically scales, both up and down, to get the right balance of performance vs. cost. Snowflake’s claim to fame is that it separates compute from storage. Snowflake enables data storage, processing, and analytic solutions that are faster, easier to use, and far more flexible than traditional offerings. Snowflake provides all of the functionality of an enterprise analytic database, along with many additional special features and unique capabilities.
 
-The Snowflake [Ballerina](https://ballerina.io/) driver library bundles the [Snowflake JDBC driver v3.13.6](https://docs.snowflake.com/en/user-guide/jdbc.html) through Ballerina. With this library, you can programmatically create and manage all Snowflake objects, including virtual warehouses, databases, and all database objects. It also provides the capability to query Snowflake data.
+The Snowflake [Ballerina](https://ballerina.io/) driver library bundles the [Snowflake JDBC driver v3.14.4](https://docs.snowflake.com/en/user-guide/jdbc.html) through Ballerina. With this library, you can programmatically create and manage all Snowflake objects, including virtual warehouses, databases, and all database objects. It also provides the capability to query Snowflake data.
 
 For more information, go to the module(s).
 - [snowflake.driver](Module.md)
 
-## Building from the source
+## Build from the source
 
-### Setting up the prerequisites
+### Set up the prerequisites
 
-1. Download and install Java SE Development Kit (JDK) version 11. You can install either [OpenJDK](https://adoptopenjdk.net/) or [Oracle](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+1. Download and install Java SE Development Kit (JDK) version 17 (from one of the following locations).
+    * [Oracle](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
+    * [OpenJDK](https://adoptium.net/)
 
-    > **Note:** Set the JAVA_HOME environment variable to the path name of the directory into which you installed JDK.
+2.  Export your GitHub personal access token with read package permissions as follows.
 
-2. Download and install [Ballerina Swan Lake](https://ballerina.io/). 
+        export packageUser=<Username>
+        export packagePAT=<Personal access token>
 
-### Building the source
+### Build the source
 
 Execute the commands below to build from the source.
 
-- To build the package:
-    ```shell
-    bal pack
-    ```
-- To run tests after build: 
-    ```shell
-    bal test
-    ```
+1. To build the library:
 
-## Contributing to Ballerina
+        ./gradlew clean build
 
-As an open source project, Ballerina welcomes contributions from the community. 
+2.  Publish ZIP artifact to the local `.m2` repository:
 
-For more information, go to the [contribution guidelines](https://github.com/ballerina-platform/ballerina-lang/blob/master/gsheet/CONTRIBUTING.md).
+        ./gradlew clean build publishToMavenLocal
+
+3.  Publish the generated artifacts to the local Ballerina central repository:
+
+        ./gradlew clean build -PpublishToLocalCentral=true
+
+4. Publish the generated artifacts to the Ballerina central repository:
+        
+        ./gradlew clean build -PpublishToCentral=true
+
+## Contribute to Ballerina
+
+As an open source project, Ballerina welcomes contributions from the community.
+
+For more information, go to the [contribution guidelines](https://github.com/ballerina-platform/ballerina-lang/blob/master/CONTRIBUTING.md).
 
 ## Code of conduct
 
-All the contributors are encouraged to read the [Ballerina Code of Conduct](https://ballerina.io/code-of-conduct).
+All contributors are encouraged to read the [Ballerina code of conduct](https://ballerina.io/code-of-conduct).
 
 ## Useful links
 
-* Discuss the code changes of the Ballerina project in [ballerina-dev@googlegroups.com](mailto:ballerina-dev@googlegroups.com).
+* For more information go to the [`h2.driver` library](https://lib.ballerina.io/ballerinax/h2.driver/latest).
 * Chat live with us via our [Discord server](https://discord.gg/ballerinalang).
 * Post all technical questions on Stack Overflow with the [#ballerina](https://stackoverflow.com/questions/tagged/ballerina) tag.

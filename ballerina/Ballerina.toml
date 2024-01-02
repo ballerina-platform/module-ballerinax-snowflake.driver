@@ -1,0 +1,16 @@
+[package]
+org = "ballerinax"
+name = "snowflake.driver"
+version = "2.7.0"
+authors = ["Ballerina"]
+keywords = ["Business Intelligence/Data Warehouse", "Cost/Paid"]
+icon = "icon.png"
+repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.driver"
+license= ["Apache-2.0"]
+distribution = "2201.8.0"
+
+[platform.java17]
+graalvmCompatible = true
+
+[[platform.java17.dependency]]
+path = "./lib/snowflake-jdbc-3.14.4.jar"
