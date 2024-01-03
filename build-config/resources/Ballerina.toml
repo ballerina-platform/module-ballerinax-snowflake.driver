@@ -13,4 +13,6 @@ distribution = "2201.8.0"
 graalvmCompatible = true
 
 [[platform.java17.dependency]]
-path = "./lib/snowflake-jdbc-@snowflake.driver.version@.jar"
+groupId = "net.snowflake"
+artifactId = "snowflake-jdbc"
+version = "@snowflake.driver.version@"
