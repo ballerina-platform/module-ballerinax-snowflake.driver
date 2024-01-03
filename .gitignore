@@ -32,11 +32,15 @@ target
 *.idea
 *.iml
 
+
 # .ballerina files
 *.ballerina
 
 # Ignore Gradle project-specific cache directory
 .gradle
+
+# Ignore VSCode project-specific directory
+.vscode
 
 # Ignore Gradle build output directory
 build
