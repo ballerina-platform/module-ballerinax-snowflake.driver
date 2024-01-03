@@ -19,22 +19,11 @@
 
 import org.apache.tools.ant.taskdefs.condition.Os
 
-buildscript {
-    repositories {
-        maven {
-            url = 'https://maven.pkg.github.com/ballerina-platform/plugin-gradle'
-            credentials {
-                username System.getenv('packageUser')
-                password System.getenv('packagePAT')
-            }
-        }
-    }
-    dependencies {
-        classpath "io.ballerina:plugin-gradle:${project.ballerinaGradlePluginVersion}"
-    }
+plugins {
+    id 'io.ballerina.plugin'
 }
 
-description = 'Ballerina - Snowflake driver Ballerina Generator'
+description = 'Ballerina - Snowflake driver'
 
 def packageName = 'snowflake.driver'
 def packageOrg = 'ballerinax'
@@ -62,7 +51,8 @@ apply plugin: 'io.ballerina.plugin'
 ballerina {
     packageOrganization = packageOrg
     module = packageName
-    langVersion = ballerinaLangVersion
+    isConnector = true
+    platform = "any"
 }
 
 task updateTomlFiles {
@@ -87,23 +77,9 @@ task commitTomlFiles {
     }
 }
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            artifact source: createArtifactZip, extension: 'zip'
-        }
-    }
-    repositories {
-        maven {
-            name = 'GitHubPackages'
-            url = uri("https://maven.pkg.github.com/ballerina-platform/module-${packageOrg}-${packageName}")
-            credentials {
-                username = System.getenv('publishUser')
-                password = System.getenv('publishPAT')
-            }
-        }
-    }
+clean {
+    delete 'build'
 }
 
-build.dependsOn "unpackJballerinaTools"
-build.dependsOn "generatePomFileForMavenPublication"
+publishToMavenLocal.dependsOn build
+publish.dependsOn build
