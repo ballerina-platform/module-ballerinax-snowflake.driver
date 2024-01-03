@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  repository_dispatch:
-    types: check_connector_for_breaking_changes
 
 jobs:
   call_workflow:
