@@ -11,6 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
+*.jar
 *.war
 *.nar
 *.ear
@@ -22,17 +23,15 @@
 hs_err_pid*
 
 # Target folder of ballerina project
-/target/*
+target
 
 # resources folder
-/resources/*.json
-
-# .DS_Store files
-*.DS_Store
+/resources/*
 
 # idea files
 *.idea
 *.iml
+
 
 # .ballerina files
 *.ballerina
@@ -40,5 +39,11 @@ hs_err_pid*
 # Ignore Gradle project-specific cache directory
 .gradle
 
+# Ignore VSCode project-specific directory
+.vscode
+
 # Ignore Gradle build output directory
 build
+
+# Ignore `docker.env` file which passes the env from the host machine to the docker container
+*.env

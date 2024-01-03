@@ -1,21 +1,18 @@
 [package]
-distribution = "2201.7.0"
 org = "ballerinax"
 name = "snowflake.driver"
-version = "2.6.0"
-license= ["Apache-2.0"]
+version = "2.7.0"
 authors = ["Ballerina"]
 keywords = ["Business Intelligence/Data Warehouse", "Cost/Paid"]
 icon = "icon.png"
 repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.driver"
+license= ["Apache-2.0"]
+distribution = "2201.8.0"
 
-[build-options]
-observabilityIncluded = true
-
-[platform.java11]
+[platform.java17]
 graalvmCompatible = true
 
-[[platform.java11.dependency]]
+[[platform.java17.dependency]]
 groupId = "net.snowflake"
 artifactId = "snowflake-jdbc"
-version = "3.13.15"
+version = "3.14.4"
