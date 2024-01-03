@@ -59,6 +59,6 @@ All contributors are encouraged to read the [Ballerina code of conduct](https://
 
 ## Useful links
 
-* For more information go to the [`h2.driver` library](https://lib.ballerina.io/ballerinax/h2.driver/latest).
+* For more information go to the [`snowflake.driver` library](https://lib.ballerina.io/ballerinax/snowflake.driver/latest).
 * Chat live with us via our [Discord server](https://discord.gg/ballerinalang).
 * Post all technical questions on Stack Overflow with the [#ballerina](https://stackoverflow.com/questions/tagged/ballerina) tag.
