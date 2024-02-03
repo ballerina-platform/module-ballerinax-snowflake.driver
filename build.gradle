@@ -99,3 +99,6 @@ release {
 task build {
     dependsOn("${packageName}-ballerina:build")
 }
+
+publishToMavenLocal.dependsOn build
+publish.dependsOn build

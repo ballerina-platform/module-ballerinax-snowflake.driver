@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.name ${{ secrets.BALLERINA_BOT_USERNAME }}
           git config --global user.email ${{ secrets.BALLERINA_BOT_EMAIL }}
-          ./gradlew build -x check -x test
+          ./gradlew build -x test
       - name: Create lib directory if not exists
         run: mkdir -p ballerina/lib
       - name: Run Trivy vulnerability scanner
