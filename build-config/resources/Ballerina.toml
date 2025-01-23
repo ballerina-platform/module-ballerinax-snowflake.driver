@@ -7,12 +7,12 @@ keywords = ["Business Intelligence/Data Warehouse", "Cost/Paid"]
 icon = "icon.png"
 repository = "https://github.com/ballerina-platform/module-ballerinax-snowflake.driver"
 license= ["Apache-2.0"]
-distribution = "2201.8.0"
+distribution = "2201.11.0-20241218-101200-109f6cc7"
 
-[platform.java17]
+[platform.java21]
 graalvmCompatible = true
 
-[[platform.java17.dependency]]
+[[platform.java21.dependency]]
 groupId = "net.snowflake"
 artifactId = "snowflake-jdbc"
 version = "@snowflake.driver.version@"

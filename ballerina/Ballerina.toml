@@ -1,7 +1,7 @@
 [package]
 org = "ballerinax"
 name = "snowflake.driver"
-version = "2.7.1"
+version = "2.8.0"
 authors = ["Ballerina"]
 keywords = ["Business Intelligence/Data Warehouse", "Cost/Paid"]
 icon = "icon.png"
