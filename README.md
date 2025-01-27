@@ -18,8 +18,8 @@ For more information, go to the module(s).
 
 ### Set up the prerequisites
 
-1. Download and install Java SE Development Kit (JDK) version 17 (from one of the following locations).
-    * [Oracle](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
+1. Download and install Java SE Development Kit (JDK) version 21 (from one of the following locations).
+    * [Oracle](https://www.oracle.com/java/technologies/javase-jdk21-downloads.html)
     * [OpenJDK](https://adoptium.net/)
 
 2.  Export your GitHub personal access token with read package permissions as follows.
