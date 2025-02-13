@@ -52,7 +52,6 @@ ballerina {
     packageOrganization = packageOrg
     module = packageName
     isConnector = true
-    platform = "java17"
 }
 
 task updateTomlFiles {
