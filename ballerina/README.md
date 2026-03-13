@@ -4,7 +4,12 @@ The Snowflake driver provides a reliable and high-performance connectivity to Sn
 
 ### Key Features
 
-- High-performance and reliable database connectivity\n- Support for various SQL operations (Query, Execute, Batch)\n- Efficient handling of database connections and resources\n- Support for database-specific data types and features\n- Secure communication with TLS and authentication\n- GraalVM compatible for native image builds
+- High-performance and reliable database connectivity
+- Support for various SQL operations (Query, Execute, Batch)
+- Efficient handling of database connections and resources
+- Support for database-specific data types and features
+- Secure communication with TLS and authentication
+- GraalVM compatible for native image builds
 
 ## Package overview
 This Package bundles the latest Snowflake driver so that the Snowflake connector can be used in ballerina projects easily.
