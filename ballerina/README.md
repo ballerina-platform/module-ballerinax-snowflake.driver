@@ -11,9 +11,6 @@ The Snowflake driver provides a reliable and high-performance connectivity to Sn
 - Secure communication with TLS and authentication
 - GraalVM compatible for native image builds
 
-## Package overview
-This Package bundles the latest Snowflake driver so that the Snowflake connector can be used in ballerina projects easily.
-
 ## Compatibility
 
 | |  Version   |
