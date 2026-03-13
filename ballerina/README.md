@@ -1,5 +1,15 @@
-## Package overview
-This Package bundles the latest Snowflake driver so that the Snowflake connector can be used in ballerina projects easily.
+## Overview
+
+The Snowflake driver provides a reliable and high-performance connectivity to Snowflake data warehouses. It enables efficient execution of SQL queries, updates, and other database operations. The driver is designed to provide a seamless experience for interacting with Snowflake, supporting various data types and advanced features of the data warehouse.
+
+### Key Features
+
+- High-performance and reliable database connectivity
+- Support for various SQL operations (Query, Execute, Batch)
+- Efficient handling of database connections and resources
+- Support for database-specific data types and features
+- Secure communication with TLS and authentication
+- GraalVM compatible for native image builds
 
 ## Compatibility
 
